@@ -283,7 +283,7 @@ nav.logo i {
 @media (max-width: 767px) {
   .hamburger {
     display: block;
-    padding-left: 20rem;
+    padding-left: 15rem;
   }
   .cross {
     display: none;
