@@ -5,20 +5,21 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 }
 
 .desktop-nav ul 
 {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around;
+    align-items: center; */
     width: 30%;
 }
 .desktop-nav ul  li 
 {
     list-style: none;
     transition: all 0.2s ease-in-out;
+    
 }
 .desktop-nav ul li a 
 {
@@ -26,4 +27,14 @@
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.2rem;
+  
 }
+
+
+@media screen and (min-width:1096px)
+{
+ .desktop-nav
+ {
+   padding:0.5rem;
+ }
+} 

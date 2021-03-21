@@ -256,9 +256,9 @@ aside a:hover::before {
     text-align: start;
   }
 
-  .wrapper 
+  /* .wrapper 
   {
     overflow-x:hidden;
-  }
+  } */
 }
 
