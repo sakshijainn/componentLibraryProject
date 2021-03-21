@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   /* background: #F7D9D9; */
 }
 
@@ -76,6 +76,7 @@ nav.logo i {
   height: 100vh;
   flex-wrap: wrap;
   flex-direction: row;
+  overflow-x: hidden;
 }
 
 .aside-container {
