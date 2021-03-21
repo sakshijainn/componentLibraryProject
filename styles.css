@@ -350,18 +350,18 @@ nav.logo i {
       width: 100%;
            
   }
+  .installation-content>div
+  {
+    height: 10%;
+  }
 
   .installation-content>div p 
   {
       font-size: 1rem;
       text-align: start;
+      word-wrap: break-word;
+     
+     
   }
-}
-@media (max-width: 467px)
-{
-  .installation-content>div p 
-  {
-      font-size: 0.6rem;
-      text-align: start;
-  }
+  
 }
