@@ -103,6 +103,6 @@ a
 {
     .cross-badge
     {
-      left:18rem;
+     display: none;
     }
 }
