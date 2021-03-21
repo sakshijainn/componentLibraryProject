@@ -248,4 +248,12 @@ aside a:hover::before {
 
 }
 
+@media screen and (min-width:250px)
+{
+  .cards a 
+  {
+    font-size: 0.71rem;
+    text-align: start;
+  }
+}
 
