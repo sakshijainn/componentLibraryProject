@@ -28,7 +28,7 @@ a
 
 .cross-badge {
   position: relative;
-  left: 19rem;
+  left: 22rem;
   top: -18rem;
   background-color: #f0f0f0;
   border-radius: 2px;
@@ -98,3 +98,11 @@ a
     color: whitesmoke;
 }
 
+
+@media screen and (max-width:400px)
+{
+    .cross-badge
+    {
+        left:18rem;
+    }
+}
