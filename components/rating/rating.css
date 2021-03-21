@@ -4,6 +4,8 @@
     text-align: center;
     perspective: 250px;
     width: 60%;
+    display: flex;
+    flex-wrap: wrap;
     /* background: #282846; */
    
 }
@@ -11,10 +13,10 @@
 .rating-star span 
 {
     cursor: pointer;
-  font-size: 50px;
+  font-size: 40px;
   padding: 0 10px;
   transition: all 150ms;
-  display: inline-block;
+  /* display: inline-block; */
 
 }
 
