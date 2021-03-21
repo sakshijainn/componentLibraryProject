@@ -286,10 +286,11 @@ nav.logo i {
     height: 100px;
     padding: 0 20px 0 20px;
   }
-  .container {
-    flex-direction: column;
+  /* .container {
+    flex-direction: row;
     background-color: white;
-  }
+    width: 100%;
+  } */
   .image {
     padding: 1rem;
     height: 20%;
@@ -297,7 +298,7 @@ nav.logo i {
   }
   .content {
    height: 30%;
-   background-color: thistle;
+   /* background-color: thistle; */
     padding: 1rem;
     width: 100%;
   }
