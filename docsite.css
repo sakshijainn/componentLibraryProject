@@ -159,6 +159,7 @@ aside a:hover::before {
   margin: 2rem;
   padding: 1rem;
  
+ 
 }
 
 .avataritem p  , .alertitem p , .buttonitem p  , .imageitem p , .inputitem p  , .listitem p ,
@@ -179,20 +180,21 @@ aside a:hover::before {
 .cards {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 20px;
+  padding: 15px;
   width: 90%;
   margin: 0 auto;
   text-align: center;
   background-color: #f1f1f1;
   padding: 1rem;
-  text-align: center;
+  text-align: start;
   margin-top: 1rem;
   background-color: #f1f1f1;
+  
  
 }
 .cards img 
 {
-  width:80%; 
+  width:75%; 
   height:80%; 
   object-fit:cover; 
 }
@@ -218,8 +220,19 @@ aside a:hover::before {
 #lin 
 {
   font-size: 1.5rem;
+  text-align: center;
 }
 
+pre 
+{
+   white-space: pre-line;
+  word-break: break-all;
+  text-align: center;
+  font-weight: 440;
+  background-color: #F7D9D9;
+  padding: 1rem;
+  color: black;
+}
 
 
 @media screen and (max-width: 860px) {
@@ -263,6 +276,7 @@ aside a:hover::before {
     font-size: 1rem;
   }
 
+
 }
 
 @media screen and (min-width:250px)
@@ -280,9 +294,5 @@ aside a:hover::before {
 }
 
 
-  /* .wrapper 
-  {
-    overflow-x:hidden;
-  } */
 }
 
