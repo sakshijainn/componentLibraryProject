@@ -78,7 +78,7 @@ nav.logo i {
 }
 
 .aside-container {
-  width: 20%;
+  width: 15%;
   height: auto;
   background: #F7D9D9;
 }
@@ -98,7 +98,7 @@ aside a {
   font-size: 1rem;
   color: black;
   display: block;
-  padding: 25px;
+  padding: 30px;
   padding-left: 30px;
   text-decoration: none;
   font-weight: 400;
@@ -142,7 +142,7 @@ aside a:hover::before {
 }
 
 .content-container {
-  width: 80%;
+  width: 85%;
   height: auto;
   background: #dddddd;
 }
@@ -160,10 +160,11 @@ aside a:hover::before {
 }
 
 .avataritem p  , .alertitem p , .buttonitem p  , .imageitem p , .inputitem p  , .listitem p ,
-.navitem p , .modalitem p , .ratingitem p
+.navitem p , .modalitem p , .ratingitem p , .griditem p , .textutlityitem p, .toastitem p , .notify p
 {
   padding:1rem;
 }
+
 
 
 .card-container
@@ -200,6 +201,19 @@ aside a:hover::before {
   color: #f25287;
   font-size: 1.2rem;
 }
+
+.footer 
+{
+  background-color: #393232;
+  width:100%;
+  height: 3rem;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+ 
+}
+
+
 
 @media screen and (max-width: 860px) {
   .aside-container {
