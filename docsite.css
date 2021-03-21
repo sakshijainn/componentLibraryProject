@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  
+
   /* background: #F7D9D9; */
 }
 
@@ -76,13 +76,12 @@ nav.logo i {
   height: 100vh;
   flex-wrap: wrap;
   flex-direction: row;
-  
 }
 
 .aside-container {
   width: 15%;
   height: auto;
-  background: #F7D9D9;
+  background: #f7d9d9;
 }
 
 aside {
@@ -158,20 +157,25 @@ aside a:hover::before {
   border: 0.7px solid whitesmoke;
   margin: 2rem;
   padding: 1rem;
- 
- 
 }
 
-.avataritem p  , .alertitem p , .buttonitem p  , .imageitem p , .inputitem p  , .listitem p ,
-.navitem p , .modalitem p , .ratingitem p , .griditem p , .textutlityitem p, .toastitem p , .notify p
-{
-  padding:1rem;
+.avataritem p,
+.alertitem p,
+.buttonitem p,
+.imageitem p,
+.inputitem p,
+.listitem p,
+.navitem p,
+.modalitem p,
+.ratingitem p,
+.griditem p,
+.textutlityitem p,
+.toastitem p,
+.notify p {
+  padding: 1rem;
 }
 
-
-
-.card-container
-{
+.card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -189,14 +193,11 @@ aside a:hover::before {
   text-align: start;
   margin-top: 1rem;
   background-color: #f1f1f1;
-  
- 
 }
-.cards img 
-{
-  width:75%; 
-  height:80%; 
-  object-fit:cover; 
+.cards img {
+  width: 75%;
+  height: 80%;
+  object-fit: cover;
 }
 
 .cards a {
@@ -206,34 +207,29 @@ aside a:hover::before {
   font-size: 1.2rem;
 }
 
-.footer 
-{
+.footer {
   background-color: #393232;
-  width:100%;
+  width: 100%;
   height: 3rem;
   text-align: center;
   color: white;
   padding: 1rem;
- 
 }
 
-#lin 
-{
+#lin {
   font-size: 1.5rem;
   text-align: center;
 }
 
-pre 
-{
-   white-space: pre-line;
+pre {
+  white-space: pre-line;
   word-break: break-all;
   text-align: center;
   font-weight: 440;
-  background-color: #F7D9D9;
+  background-color: #f7d9d9;
   padding: 1rem;
   color: black;
 }
-
 
 @media screen and (max-width: 860px) {
   .aside-container {
@@ -242,57 +238,41 @@ pre
   .content-container {
     width: 100%;
   }
-  .cards a 
-  {
+  .cards a {
     font-size: 1.2rem;
-
   }
 
-  #lin 
-{
-  font-size: 1.2rem;
-}
-
-
-  .cards img 
-{
-  width:100%; 
-  height:100%; 
-  object-fit:cover; 
-}
-}
-
-@media screen and (max-width:400px)
-{
-  .cards img 
-  {
-    width:100%; 
-    height:200%; 
-    object-fit:cover; 
+  #lin {
+    font-size: 1.2rem;
   }
 
-  .cards a 
-  {
+  .cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cards img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+  }
+
+  .cards a {
     font-size: 1rem;
   }
-
-
 }
 
-@media screen and (min-width:250px)
-{
-  .cards a 
-  {
+@media screen and (min-width: 250px) {
+  .cards a {
     font-size: 0.71rem;
     text-align: start;
   }
 
-  #lin 
-{
-  font-size: 1.3rem;
-  word-wrap: break-word;
+  #lin {
+    font-size: 1.3rem;
+    word-wrap: break-word;
+  }
 }
-
-
-}
-
