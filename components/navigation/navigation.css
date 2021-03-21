@@ -4,21 +4,31 @@
   padding: 1rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+ 
 
 }
 
 .desktop-nav ul 
 {
     display: flex;
-    /* justify-content: space-around;
-    align-items: center; */
-    width: 30%;
+    flex-wrap: wrap;
+    height: 100%;
+    /* justify-content: center; */
+    align-items: center;
+   
+   
 }
 .desktop-nav ul  li 
 {
+   display: flex;
+   flex-direction: column;
     list-style: none;
     transition: all 0.2s ease-in-out;
+    justify-content: space-around;
+    align-items: center;
     
 }
 .desktop-nav ul li a 
@@ -31,10 +41,4 @@
 }
 
 
-@media screen and (max-width:350px)
-{
- .desktop-nav ul li a
- {
-   font-size:0.5rem;
- }
-} 
+
