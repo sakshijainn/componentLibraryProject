@@ -215,6 +215,11 @@ aside a:hover::before {
  
 }
 
+#lin 
+{
+  font-size: 1.5rem;
+}
+
 
 
 @media screen and (max-width: 860px) {
@@ -224,6 +229,18 @@ aside a:hover::before {
   .content-container {
     width: 100%;
   }
+  .cards a 
+  {
+    font-size: 1.2rem;
+
+  }
+
+  #lin 
+{
+  font-size: 1.2rem;
+}
+
+
   .cards img 
 {
   width:100%; 
@@ -255,6 +272,13 @@ aside a:hover::before {
     font-size: 0.71rem;
     text-align: start;
   }
+
+  #lin 
+{
+  font-size: 1.3rem;
+  word-wrap: break-word;
+}
+
 
   /* .wrapper 
   {
