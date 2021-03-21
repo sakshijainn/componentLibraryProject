@@ -99,10 +99,10 @@ a
 }
 
 
-@media screen and (max-width:400px)
+@media screen and (max-width:460px)
 {
     .cross-badge
     {
-        left:18rem;
+      left:18rem;
     }
 }
