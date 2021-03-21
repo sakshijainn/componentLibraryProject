@@ -255,5 +255,10 @@ aside a:hover::before {
     font-size: 0.71rem;
     text-align: start;
   }
+
+  .wrapper 
+  {
+    overflow-x:hidden;
+  }
 }
 
