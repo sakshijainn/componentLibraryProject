@@ -117,7 +117,13 @@ nav.logo i {
   background-color: #26001b;
   color: white;
   margin-left: 2rem;
+  cursor: pointer;
 }
+.button-container button:hover 
+  {
+    background-color: #F25287;
+    color: white;
+  }
 
 .installation-container {
   display: flex;
@@ -256,13 +262,10 @@ nav.logo i {
   .button-container button {
     margin-left: 6rem;
     width: 80%;
+    cursor: pointer;
   }
 
-  .button-container button:hover 
-  {
-    background-color: #F25287;
-    color: white;
-  }
+  
   .installation-container
   {
       width: 100%;
