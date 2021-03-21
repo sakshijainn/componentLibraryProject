@@ -27,9 +27,9 @@ a
 }
 
 .cross-badge {
-  position: absolute;
+  position: relative;
   left: 330px;
-  top: 20px;
+  top: -280px;
   background-color: #f0f0f0;
   border-radius: 2px;
   text-transform: uppercase;
