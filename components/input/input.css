@@ -1,0 +1,52 @@
+.input-tag {
+  width: 50%;
+  border: 2px solid lightblue;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.input-tag:focus , .input-validate:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+
+.input-container 
+{
+    margin-bottom:15px;
+    max-width:300px;
+
+
+}
+.input-container[data-error] .input-validate
+{
+    border-color: #c92432;
+    color:#c92432;
+    background-color: #fffafa;
+}
+
+.input-container[data-error]::after
+{
+    content: attr(data-error);
+    font-size: 0.85em;
+    color:#c92432;
+    display: block;
+    margin: 10px 0;
+
+}
+.input-validate 
+{
+    display: block;
+    width:100%;
+    padding:12px;
+    border:1px solid #dddddd;
+    border-radius: 4px;
+    transition: background 0.2s, border 0.2s;
+    outline: none;
+
+}
+

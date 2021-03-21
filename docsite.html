@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./docsite.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <div
+          style="font-size: 1.5rem; letter-spacing: 3px; font-weight: 600"
+          class="logo"
+        >
+          <i class="fa fa-heart" aria-hidden="true"> UIBlocks </i>
+        </div>
+
+        <button class="hamburger">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <button class="cross">X</button>
+
+        <ul class="nav-ul">
+          <li><a href="">Home</a></li>
+          <li><a href="">Docs</a></li>
+          <li>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrapper">
+      <div class="aside-container">
+        <aside>
+          <div class="heading">
+            <h3>UI BLOCKS</h3>
+          </div>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </span>
+            <span class="title">Avatar</span>
+          </a>
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            </span>
+            <span class="title">Alert</span>
+          </a>
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-id-badge" aria-hidden="true"></i>
+            </span>
+            <span class="title">Badge</span>
+          </a>
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-bold" aria-hidden="true"></i>
+            </span>
+            <span class="title">Button</span>
+          </a>
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-address-card-o" aria-hidden="true"></i>
+            </span>
+            <span class="title">Card</span>
+          </a>
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </span>
+            <span class="title">Image</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+            </span>
+            <span class="title">Input</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-list-ol" aria-hidden="true"></i>
+            </span>
+            <span class="title">List</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+            <span class="title">Navigation</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-th-large" aria-hidden="true"></i>
+            </span>
+            <span class="title">Modal</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+            <span class="title">Rating</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-glide-g" aria-hidden="true"></i>
+            </span>
+            <span class="title">Grid</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-text-width" aria-hidden="true"></i>
+            </span>
+            <span class="title">Text Utilities</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </span>
+            <span class="title">Toast</span>
+          </a>
+
+          <a href="#">
+            <span class="icon">
+              <i class="fa fa-sticky-note" aria-hidden="true"></i>
+            </span>
+            <span class="title">Notify</span>
+          </a>
+        </aside>
+      </div>
+      <div class="content-container">
+        <div class="content">
+          <div class="item1">
+            <h3>INTRODUCTION</h3>
+            <h4>To import CSS FILE:</h4>
+            <div class="cards">
+              <a href="https://">
+                https://uiblocks.netlify.app/components.css</a
+              >
+            </div>
+          </div>
+
+          <div class="item1 avataritem">
+            <h3>AVATAR</h3>
+            <p>
+              An avatar specifically refers to a character that represents an
+              online user.
+            </p>
+            <img
+              class="avatar img"
+              src="https://pbs.twimg.com/profile_images/1348031952843010048/YGivPLdo_400x400.jpg"
+            />
+            <img
+              class="avatar img"
+              src="data:image/jpeg;base64,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"
+            />
+            <img
+              class="avatar img"
+              src="https://avatars.githubusercontent.com/u/79132160?s=400&u=46e55fa9fc2bd946e0da734ddd123f711abaac90&v=4"
+            />
+
+            <div class="cards">
+              <img src="./images/i21.PNG" alt="">
+            </div>
+          </div>
+          <div class="item1 alertitem">
+            <h3>ALERT</h3>
+            <p>Alert messages can be used to notify the user about something special: danger, success, information
+                or warning.. </p>
+            <div class="alert default-alert">
+                <h3>This is an Alert Example</h3>
+                <a class="cross-alert">&times;</a>
+            </div>
+            
+            <div class="alert success-alert">
+                <h3>This is an Alert Example</h3>
+                <a class="cross-alert">&times;</a>
+            </div>
+
+            <div class="alert warning-alert">
+                <h3>This is an Alert Example</h3>
+                <a class="cross-alert">&times;</a>
+            </div>
+
+            <div class="alert danger-alert">
+                <h3>This is an Alert Example</h3>
+                <a class="cross-alert">&times;</a>
+            </div>
+
+            <div class="cards">
+                <img src="../images/i2.PNG" alt="">
+            </div>
+          </div>
+
+          <div class="item1 badgeitem">
+            <h3>Badges</h3>
+            <p>Badges are mainly used to highlight new or unread items. </p>
+            <br>
+            <div class="badge-box">
+              <div class="badge-item">
+                <i class="fa fa-bell"></i>
+                <span class="num">5</span>
+              </div>  &nbsp;&nbsp;&nbsp;
+              <div class="badge-item">
+                <i class="fa fa-commenting" aria-hidden="true"></i>
+                <span class="num">2</span>
+              </div>
+            </div>
+            <div class="cards">
+              <img src="./images/i20.PNG" alt="">
+            </div>
+          </div>
+
+          <div class="item1 buttonitem">
+            <h3>Button</h3>
+            <p>Buttons allow users to take actions, and make choices, with a single tap..</p>
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-link">Link</button>
+
+            <div class="cards">
+                <img src="../images/i3.PNG" alt="">
+            </div>
+            <br>
+            <button class="btn btn-icon"><i class="fa fa-home"></i></button>
+            <button class="btn btn-icon"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-icon"><i class="fa fa-close"></i></button>
+            <button class="btn btn-icon"><i class="fa fa-folder"></i></button>
+            <!-- <button class="btn btn-float"><i class="fa fa-plus"></i></button> -->
+
+            <div class="cards">
+               <img src="../images/i4.PNG" alt="">
+            </div>
+          </div>
+
+          <div class="item1 carditem">
+              <h3>CARD</h3>
+              <p>A bordered box with some padding around its content.</p>
+              
+              <div class="card-container">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://cdn.dribbble.com/users/5448869/screenshots/11964344/media/7c1a55db92d1d015c51ad7595a2b82ff.png?compress=1&resize=400x300" alt="">
+                </div>
+                <div class="card-details">
+                  <h4><a href="">NEOG CAMP STUDENT</a></h4>
+                  <p>I am a proud neog Student!</p>
+                  <button class="btn btn-success">Wish your Dreams</button>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="badge">NEW STUDENT</div>
+                <div class="card-image">
+                  <img src="https://cdn.dribbble.com/users/5448869/screenshots/11964344/media/7c1a55db92d1d015c51ad7595a2b82ff.png?compress=1&resize=400x300" alt="">
+                </div>
+                <div class="card-details">
+                  <h4><a href="">NEOG CAMP STUDENT</a></h4>
+                  <p>I am a proud neog Student!</p>
+                  <button class="btn btn-success">Wish your Dreams</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="badge">NEW STUDENT</div>
+                
+                <div class="card-image">
+                  <img src="https://cdn.dribbble.com/users/5448869/screenshots/11964344/media/7c1a55db92d1d015c51ad7595a2b82ff.png?compress=1&resize=400x300" alt="">
+                </div>
+                <button class="cross-badge">X</button>
+                <div class="card-details">
+                  <h4><a href="">NEOG CAMP STUDENT</a></h4>
+                  <p>I am a proud neog Student!</p>
+                  <button class="btn btn-success">Wish your Dreams</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="badge">NEW STUDENT</div>
+                <div class="card-image">
+                  <img src="https://cdn.dribbble.com/users/5448869/screenshots/11964344/media/7c1a55db92d1d015c51ad7595a2b82ff.png?compress=1&resize=400x300" alt="">
+                </div>
+                <div class="overlay-text">
+                  <p>This is an Overlay Text for the card</p>
+                </div>
+                <button class="cross-badge">X</button>
+                <div class="card-details">
+                  <h4><a href="">NEOG CAMP STUDENT</a></h4>
+                  <p>I am a proud neog Student!</p>
+                  <button class="btn btn-success">Wish your Dreams</button>
+                </div>
+              </div>
+              </div>
+
+
+          <div class="cards">
+              <img src="./images/i19.PNG" alt="">
+
+          </div>
+        </div>
+
+      
+
+         
+          <!-- <div class="card-item">
+            <div class="card">
+              <img class="card-img" src="https://via.placeholder.com/150" alt="" />
+              <div class="badge">
+                <i class="left"></i>
+                <i class="right"></i>
+                NEW
+              </div>
+            
+
+    
+              <div class="card-content">
+                <h1 class="card-header">Card Heading</h1>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing <br />
+                  elitdksjkfjdsdfekjfrididh.
+                </p>
+                <button class="btn btn-danger">CardBtn</button>
+              </div>
+            </div>
+          </div> -->
+         
+
+
+          <div class="item1 imageitem">
+              <h3>Responsive Image</h3>
+              <p>Responsive images will automatically adjust to fit the size of the screen.</p>
+              <img
+              src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"
+              class="img-responsive"
+              alt="Cinque Terre"
+            />
+
+            <img
+            src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"
+            class="img-responsive img-circular"
+            alt="Cinque Terre"
+          />
+          <div class="cards">
+              <img src="./images/I5.PNG" alt="">
+          </div>
+
+          </div>
+
+          <div class="item1 inputitem">
+              <h3>Input</h3>
+              <p>Easy adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+              <input class="input-tag" type="text" placeholder="Your name" />
+              <div class="cards">
+                  <img src="./images/i6.PNG" alt="">
+              </div>
+              <br>
+              <div class="input-container" data-error="Sorry! Username is taken">
+                <input
+                  type="text"
+                  class="input-validate"
+                  placeholder="Your Name"
+                  value="user123"
+                />
+              </div>
+              <div class="cards">
+                  <img src="./images/i7.PNG" alt="">
+              </div>
+        </div>
+
+        <div class="item1 listitem">
+            <h3>Lists</h3>
+            <p> It offers lists of information. All lists must contain one or more list elements</p>
+            <br>
+            <ul class="list-tag">
+                <li data-icon="🦄">Magic is Unicorn!</li>
+                <li data-icon="🌈">
+                  NEOG looks liek a rainbow of sunshine!
+                </li>
+                <li data-icon="😎">We are neo-Grammers</li>
+              </ul>
+
+            <div class="cards">
+                <img src="./images/i8.PNG" alt="">
+            </div>
+            <br>
+            <div class="notification-box" id="box">
+                <h2>Notifications <span>17</span></h2>
+                <div class="notification-item">
+                  <div class="text">
+                    <h4>Tanay Pratap</h4>
+                    <p>Do not give up!</p>
+                  </div>
+                </div>
+                <div class="notification-item">
+                  <div class="text">
+                    <h4>NEOG CAMP</h4>
+                    <p>We are there for you!</p>
+                  </div>
+                </div>
+                <div class="notification-item">
+                  <div class="text">
+                    <h4>FULL STACK WEB DEV</h4>
+                    <p>I AM YOUR GOAL!</p>
+                  </div>
+                </div>
+              </div>
+          <br>
+          <div class="cards">
+              <img src="./images/i9.PNG" alt="">
+          </div>
+        </div>
+
+        <div class="item1 navitem">
+            <h3>Desktop Navigation</h3>
+            <p>Its purpose is to provide navigation links, either within the current document or to other documents</p>
+            <nav class="desktop-nav">
+                <div class="logo">
+                     <h1>LOGO</h1>
+               </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blogs</a></li>
+             </ul>
+            </nav>
+            <div class="cards">
+                <img src="./images/i10.PNG" alt="">
+            </div>
+        </div>
+
+        <div class="item1 modalitem">
+            <h3>MODAL</h3>
+            <p>A modal is a dialog box/popup window that is displayed on top of the current page</p>
+            <br>
+            <div id="openModal-about" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Modal</h2>
+                    <p>Shine like a sky of rainbow whose purpose is to sprinkle out the drops of efforts, hard work,pain , gain , dediacation to drench in the rain of dreams , smiles and happiness!</p>
+                </div>
+          </div>
+
+          <div class="cards">
+              <img src="./images/i11.PNG" alt="">
+          </div>
+
+
+        </div>
+
+        <div class="item1 ratingitem">
+            <h3>RATING</h3>
+            <p>It is a simple "star rating" look with CSS.</p>
+            <div class="rating-star">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div> 
+              <div class="cards">
+                  <img src="./images/i12.PNG" alt="">
+              </div>
+
+        </div>
+
+        <div class="item1 griditem">
+            <h3>SIMPLIFIED GRID</h3>
+            <p>Grid Layout excels at dividing a page into major regions </p>
+            <div class="grid-container2">
+                <div class="items">
+                    <h4>HOPE AND SMILE</h4>
+                  <p>To achieve your dreams</p>
+                </div>
+                <div class="items">
+                  <h4>PAIN AND GAIN</h4>
+                 <p>To work for your dreams.</p></div>
+              </div>
+
+              <div class="cards">
+                  <img src="./images/i13.PNG" alt="">
+              </div>
+              <br>
+              <!-- SIMPLIFIED GRID :3 ITEMS IN GRID -->
+<div class="grid-container3">
+    <div class="items">1
+      <p>hope and smile</p>
+    </div>
+    <div class="items">
+      2
+     <p>push your dreams.</p></div>
+     <div class="items">
+      3
+     <p>walk more!</p></div>
+  </div>
+  <div class="cards">
+      <img src="./images/i14.PNG" alt="">
+  </div>
+                 
+        </div>
+
+        <div class="item1 textutlityitem">
+            <h3>Text Utility</h3>
+            <p>Text utilities control alignment, wrapping, formatting and weight.</p>
+            <br>
+            <p class="heading-text">Heading Text</p>
+  <p class="small-text">Small Text</p>
+  <p class="gray-text">Gray Text</p>
+  <p class="center-text">Center Text</p>
+  <div class="cards">
+      <img src="./images/i15.PNG" alt="">
+  </div>
+
+
+        </div>
+
+        <div class="item1 toastitem" >
+            <h3>SNACKBAR / TOAST</h3>
+            <p>The toast component is like an alert box that is only shown for a couple of seconds</p>
+            <br>
+            <div id="snackbar">Toast/SnackBar : Some text..</div>
+            <br>
+            <div class="cards">
+                <img src="./images/i16.PNG" alt="">
+            </div>
+        </div>
+
+        <div class="item1 notify">
+            <h3>NOTIFY</h3>
+            <p>Notify the user about something special: danger, success, information or warning</p>
+            <!-- NOTIFY -->
+<div class="notice info"><p>I am information notify!</p></div>
+
+<div class="notice success"><p>I am positive notify!</p></div>
+
+<div class="notice warning"><p>I am negative notify!</p></div>
+
+<div class="notice error"><p>I am error notify!</p></div>
+<div class="cards">
+    <img src="./images/i17.PNG" alt="">
+</div>
+        </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

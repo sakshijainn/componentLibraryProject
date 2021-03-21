@@ -1,0 +1,15 @@
+
+.avatar {
+ 
+  border-radius: 50%;	
+  transition: linear 0.25s;
+  height: 100px;
+  width: 100px;
+}
+
+.avatar img {
+	border-radius: 50%;	
+    width: 100%;
+    object-fit: cover;
+}
+

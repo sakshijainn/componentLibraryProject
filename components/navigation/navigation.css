@@ -1,0 +1,29 @@
+.desktop-nav 
+{
+    background: black;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-nav ul 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+.desktop-nav ul  li 
+{
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+}
+.desktop-nav ul li a 
+{
+    padding: 0.4rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
