@@ -5,9 +5,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-body 
-{
-  background-color: #DDDDDD;
+body {
+  background-color: #dddddd;
+  overflow-x: hidden;
 }
 
 nav {
@@ -66,67 +66,64 @@ nav.logo i {
   display: none;
 }
 
-.container {
+.wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+}
+
+.content-container {
+  width: 100%;
+  height: 70%;
   background-color: #f7d9d9;
+  display: flex;
+}
+
+.image {
+  display: flex;
+  margin: 2rem;
+  width: 50%;
 }
 
 .content {
-  width: 60%;
-  height: 100%;
-
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2rem;
+  padding: 2rem;
 }
-.image {
-  padding: 4.4rem;
+.heading-content {
+  padding: 2rem;
+  text-align: start;
 }
-
-.image img {
-  width: 100%;
-  object-fit: cover;
-}
-
 .heading-content h1 {
-  font-size: 3rem;
-  padding: 3rem;
+  font-size: 2.5rem;
+  text-align: start;
 }
 
 .heading-content p {
-  text-align: start;
-  font-size: 1.5rem;
-  padding-left: 4rem;
-}
-
-.button-container {
-  margin: 1rem;
-  padding-left: 3rem;
-  font-size: 4rem;
-}
-
-.button-container button {
   font-size: 1.3rem;
+  text-align: start;
+  padding-top: 1rem;
+}
+.button-container button {
+  font-size: 1.5rem;
   width: 60%;
   height: 3rem;
   border-radius: 5px;
   outline: none;
   border: none;
-  background-color: #393232;
+  background-color: #26001b;
   color: white;
+  margin-left: 2rem;
 }
 
-.installation 
-{
-  
+.installation-container {
   display: flex;
-  height: 100vh;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #dddddd;
-  
+  height: 50%;
+  width: 100%;
+ 
 }
 .installation-logo
 {
@@ -135,6 +132,7 @@ nav.logo i {
   background-color: white;
   box-shadow: 0 8px 6px -6px black;
   border-radius:10px;
+  margin:2rem;
  
 }
 
@@ -157,7 +155,9 @@ nav.logo i {
   margin: 0.5rem;
   font-size: 2rem;
   color: #F25287;
+  padding:1rem;
 }
+
 
 .installation-content
 {
@@ -206,57 +206,79 @@ nav.logo i {
 
 
 
-
 @media (max-width: 1000px) {
   nav {
     padding: 0 40px 0 50px;
   }
-
-  .heading-content h1 {
-    font-size: 2.2rem;
-    padding: 1rem;
-    text-align: start;
-  }
-  .heading-content p {
- 
-    font-size: 1.4rem;
-    padding-left: 1rem;
-    font-weight: 500;
-    text-align: start;
-   
-  }
-  .installation 
+  .installation-container
   {
-    flex-direction: column;
-    height: 100vh;
-   
-   
+      width: 100%;
+      flex-direction: column;
   }
   .installation-logo
-{
- 
-  padding: 0.5rem;
-  margin-top: 10%;
-  background-color: white;
-  box-shadow: 0 8px 6px -6px black;
-  border-radius:10px;
-  
- 
- 
-}
-.installation-content
-{
-  
- 
-  padding: 1rem;
+  {
+      width: 80%;
+      margin:1rem;
+  }
+  .installation-content
+  {
+      width: 100%;
+      
+  }
   
 }
 
+@media (max-width: 850px) {
+  .image {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 14rem;
+  }
+  .content-container {
+    flex-direction: column;
+  }
 
+  .content {
+    margin: 0 auto;
+    width: 100%;
+  }
 
+  .heading-content {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .heading-content h1 {
+    font-size: 1.5rem;
+    text-align: start;
+  }
+  .button-container button {
+    margin-left: 6rem;
+    width: 80%;
+  }
+  .installation-container
+  {
+      width: 100%;
+      flex-direction: column;
+  }
+  .installation-logo
+  {
+      width: 50%;
+  }
+  .installation-content
+  {
+      width: 100%;
+      margin-left: 0rem;
+      
+  }
+
+  .installation-content>div p 
+  {
+      font-size: 1rem;
+      text-align: center;
+  }
 }
-
-
 
 @media (max-width: 767px) {
   .hamburger {
@@ -286,88 +308,53 @@ nav.logo i {
     height: 100px;
     padding: 0 20px 0 20px;
   }
-  /* .container {
-    flex-direction: row;
-    background-color: white;
-    width: 100%;
-  } */
-  .image {
-    padding: 1rem;
-    height: 20%;
-   
+  .content-container {
+    flex-direction: column;
   }
+
+  .image {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0rem;
+  }
+
   .content {
-   height: 30%;
-   /* background-color: thistle; */
-    padding: 1rem;
+    margin: 0 auto;
     width: 100%;
   }
 
-  .heading-content h1 {
-    font-size: 2rem;
-    padding: 3rem;
-    text-align:center;
+  .heading-content {
+    padding: 1rem;
+    text-align: center;
   }
-  .heading-content p {
- 
-    font-size: 1.2rem;
-    padding-left: 3.6rem;
-    font-weight: 800;
-   
+
+  .heading-content h1 {
+    font-size: 1.5rem;
+    text-align: start;
   }
   .button-container button {
-    font-size: 1.5rem;
-    width: 60%;
-    height: 3rem;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    background-color: #26001b;
-    color: white;
+    margin-left: 1rem;
   }
-  .installation 
+
+  .installation-container
   {
-    flex-direction: column;
+      width: 100%;
+      flex-direction: column;
   }
   .installation-logo
   {
-   
-    padding:0.1rem;
-    margin-top: 20%;
-    background-color: white;
-    box-shadow: 0 8px 6px -6px black;
-    width: 80%;
-    border-radius:10px;
-    
-   
-   
+      width: 90%;
   }
   .installation-content
   {
-    
-   
-    padding:1rem;
-    width: 100%;
-    text-align: center;
-    
-  
-   
-    
+      width: 100%;
+      margin-left: -2rem;
+      
   }
-  .installation-content  div 
+
+  .installation-content>div p 
   {
-    
-    width:100%;
-    margin-left:0.2rem;
-    margin-top: -0.5rem;
-    height: 10px;
-   
-    
+      font-size: 0.7rem;
+      text-align: center;
   }
-  
-  .installation-content div p 
-  {
-    font-size: 0.9rem;
-  }
-  
 }
